@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:wght@300&family=Overlock+SC&family=Roboto:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  z-index: 1000;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  padding: 5px 15px 5px 15px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #110f1200;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.navbar__active {
+  background-color: #110f12;
+  color: #b4b4b2;
+}
+
+.navbar__title {
+  font-size: 30px;
+}
+
+.navbar a {
+  font-family: "Courier Prime", monospace;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.navbar .navbar__burger {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__burger__line {
+  background-color: #110f12;
+  width: 35px;
+  height: 4px;
+  margin: 6px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.line__active {
+  background-color: #b4b4b2;
+}
+
+.inicio {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background-image: url(/img/emile-perron-xrVDYZRGdw4-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 75%;
+  background-position-y: 90%;
+}
+
+.inicio__square {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  background-color: #212529b4;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  color: #fcfce6;
+}
+
+.inicio__square h1 {
+  opacity: 1;
+  font-weight: normal;
+}
+
+.inicio__square p {
+  padding: 10px 0 15px 0;
+  font-size: 20px;
+}
+
+.inicio__square button {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 14px 25px;
+  background-color: #212529;
+  color: #fcfce6;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.inicio__square button:hover {
+  background-color: #fcfce6;
+  color: #212529;
+}
+
+.index {
+  background-color: #110f12;
+  color: #fcfce6;
+  padding-bottom: 0px;
+  box-shadow: 0px 5px 5px grey;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 900px;
+}
+
+.effect {
+  transform: translateY(150px);
+  transition: transform 1s;
+}
+
+.show {
+  transform: translateY(0px);
+}
+
+.title__container {
+  display: block;
+  width: 100%;
+}
+
+.index__title {
+  font-family: "Overlock SC", cursive;
+  font-size: 36px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  max-width: 320px;
+  margin: auto;
+  text-align: center;
+}
+
+.index__content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 10px 20px 10px;
+  max-width: 320px;
+  margin: auto;
+}
+
+.index__min {
+  min-height: 168px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.index__img {
+  max-width: 320px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.index__line {
+  background-color: #fcfce679;
+  opacity: 0.5;
+  width: 80%;
+  max-width: 320px;
+  height: 1.4px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0;
+}
+
+.dark {
+  background-color: #110f12;
+}
+
+.vertical {
+  display: none;
+}
+
+.large {
+  max-width: 900px;
+}
+
+.title {
+  font-family: "Overlock SC", cursive;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  max-width: 320px;
+  margin: auto;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Overlock SC", cursive;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  max-width: 320px;
+  margin: auto;
+  text-align: center;
+}
+
+.project {
+  position: relative;
+}
+
+.project img {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.project:hover img {
+  opacity: 0.3;
+}
+
+.project:hover .middle {
+  opacity: 1;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 40px;
+  width: 80px;
+  border-radius: 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #fcfce6;
+  color: #110f12;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.open {
+  font-family: "Courier Prime", monospace;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.middle:hover {
+  color: #fcfce6;
+  background-color: #110f12;
+}
+
+.leermas {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  max-width: 320px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.leermas div a:link {
+  color: #167ade;
+}
+
+.leermas div a:hover {
+  color: #0a2e52;
+}
+
+.table {
+  max-width: 900px;
+  margin: auto;
+}
+
+.table table {
+  border: none;
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  height: 43px;
+}
+
+.table tr:hover {
+  background-color: beige;
+}
+
+.table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.table tr:nth-child(even):hover {
+  background-color: aliceblue;
+}
+
+.table th {
+  font-family: "Montserrat", sans-serif;
+  border-left: 1px solid #21252986;
+}
+
+.table td {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 900;
+  border-left: 1px solid #21252986;
+}
+
+.table th:first-child,
+.table td:first-child {
+  border-left: none;
+}
+
+@media only screen and (min-width: 679px) {
+  .introduction .index__line,
+  .project__one .index__line {
+    display: none;
+  }
+
+  .vertical {
+    display: block;
+    width: 1.4px;
+    height: 500px;
+    z-index: 0;
+  }
+}
+
+.div1 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
+  box-sizing: content-box;
+  width: 90%;
+  height: 90px;
+  /*padding-top: 6vh;*/
+  margin: auto;
+  margin-top: 45px;
+}
+
+.div1_1,
+.div1_2 {
+  border-style: solid;
+  border-color: deeppink;
+  width: 20%;
+  height: 20px;
+}
+
+.div1_1 {
+  margin-top: 20px;
+}
+
+.div1_2 {
+  width: 10%;
+  position: absolute;
+  top: 5px;
+}
