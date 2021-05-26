@@ -27,18 +27,54 @@
 
 .navbar__title {
   font-size: 30px;
-}
-
-.navbar a {
   font-family: "Courier Prime", monospace;
   text-transform: uppercase;
   cursor: default;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 50vh;
+  left: 200%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #212529;
+  z-index: -1;
+  transition: left 1s;
+}
+
+.navbar ul {
+  width: 100%;
+  font-family: "Courier Prime", monospace;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.navbar li:hover {
+  background-color: #b4b4b2;
+  color: #110f12;
 }
 
 .navbar .navbar__burger {
   display: inline-block;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .navbar__burger__line {
@@ -131,12 +167,13 @@
 }
 
 .title__container {
+  font-family: "Courier Prime", monospace;
   display: block;
   width: 100%;
 }
 
 .index__title {
-  font-family: "Overlock SC", cursive;
+  font-family: "Courier Prime", monospace;
   font-size: 36px;
   padding-top: 30px;
   padding-bottom: 15px;
@@ -197,7 +234,7 @@ img {
 }
 
 .title {
-  font-family: "Overlock SC", cursive;
+  font-family: "Courier Prime", monospace;
   font-size: 18px;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -207,7 +244,7 @@ img {
 }
 
 .subtitle {
-  font-family: "Overlock SC", cursive;
+  font-family: "Courier Prime", monospace;
   font-size: 16px;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -280,6 +317,77 @@ img {
 
 .leermas div a:hover {
   color: #0a2e52;
+}
+
+.tecnologias {
+  margin: auto;
+}
+
+.icon__container {
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 0px 30px 10px 30px;
+  margin: auto;
+}
+
+.icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.php {
+  background-image: url(/logos/php.svg);
+}
+
+.laravel {
+  background-image: url(/logos/laravel.png);
+}
+
+.python {
+  background-image: url(/logos/python.svg);
+  width: 150px;
+}
+
+.django {
+  background-image: url(/logos/django.svg);
+}
+
+.mysql {
+  background-image: url(/logos/mysql.png);
+}
+
+.html {
+  background-image: url(/logos/html5.svg);
+}
+
+.css {
+  background-image: url(/logos/css.svg);
+  background-size: 70%;
+}
+
+.github{
+  background-image: url(/logos/github.svg);
+  background-color: #fcfce6;
+  border-radius: 40px;
+  margin-top: 10px;
+}
+
+.git {
+  background-image: url(/logos/git.png);
+  margin-top: 10px;
+}
+
+.java {
+  background-image: url(/logos/java.png);
 }
 
 .table {
