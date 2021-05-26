@@ -25,6 +25,7 @@ window.addEventListener("scroll", function () {
 function navSlide() {
   const burger = document.querySelector(".navbar__burger");
   const navlink = document.querySelector(".list");
+
   var flag = 0;
   burger.addEventListener("click", () => {
     if (flag === 0) {
@@ -34,6 +35,11 @@ function navSlide() {
       navlink.style.left = "200%";
       flag = 0;
     }
+  });
+
+  navlink.addEventListener("click", () => {
+    navlink.style.left = "200%";
+    flag = 0;
   });
 }
 

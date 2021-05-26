@@ -65,9 +65,15 @@
   text-transform: uppercase;
 }
 
-.navbar li:hover {
+.navbar li:hover,
+.navbar li:hover a {
   background-color: #b4b4b2;
   color: #110f12;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #b4b4b2;
 }
 
 .navbar .navbar__burger {
@@ -129,6 +135,9 @@
   font-size: 20px;
   letter-spacing: 1px;
   padding: 14px 25px;
+  width: 100%;
+  max-width: 270px;
+  margin: auto;
   background-color: #212529;
   color: #fcfce6;
   border-style: none;
@@ -154,7 +163,27 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
+  margin-bottom: 30px;
   max-width: 900px;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.redes__sociales {
+  margin: auto;
+  font-size: 40px;
+  cursor: default;
+}
+
+.redes__sociales i {
+  cursor: pointer;
+}
+
+.redes__sociales i:hover{
+  transform: translateY(-3px);
 }
 
 .effect {
@@ -170,6 +199,11 @@
   font-family: "Courier Prime", monospace;
   display: block;
   width: 100%;
+}
+
+.index {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .index__title {
@@ -319,10 +353,6 @@ img {
   color: #0a2e52;
 }
 
-.tecnologias {
-  margin: auto;
-}
-
 .icon__container {
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -374,7 +404,7 @@ img {
   background-size: 70%;
 }
 
-.github{
+.github {
   background-image: url(/logos/github.svg);
   background-color: #fcfce6;
   border-radius: 40px;

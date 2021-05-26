@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bace6cc7e8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Yeisson Jr.</title>
 </head>
@@ -18,11 +19,11 @@
         </div>
         <div class="navbar__div list">
             <ul class="navlinks">
-                <li>Sobre mí</li>
-                <li>Proyectos</li>
-                <li>Tecnologías</li>
-                <li>Estudios</li>
-                <li>Contacto</li>
+                <li onclick="window.location='/#sobremi'"><a href="/#sobremi">Sobre mí</a></a></li>
+                <li onclick="window.location='/#proyectos'"><a href="/#proyectos">Proyectos</a></li>
+                <li onclick="window.location='/#tecnologias'"><a href="/#tecnologias">Tecnologías</a></li>
+                <li onclick="window.location='/#tecnologias'"><a href="/#tecnologias">Estudios</a></li>
+                <li onclick="window.location='/#contacto'"><a href="/#contacto">Contacto</a></li>
             </ul>
         </div>
         <div class="navbar__burger">
@@ -42,7 +43,7 @@
     </div>
 
     <!--Segunda sección de presentación-->
-    <div class="index">
+    <div class="index" id="sobremi">
         <div class="container effect">
             <div class="introduction">
                 <div class="index__title">
@@ -74,8 +75,9 @@
         </div>
     </div>
 
+    <div id="proyectos"></div>
     <!--Segunda sección, muestra de proyectos-->
-    <div class="title">
+    <div class="title" style="margin-top: 50px;">
         <h1>PROYECTOS</h1>
     </div>
     <div class="index__line large dark"></div>
@@ -121,52 +123,11 @@
         <!--No olvidar poner esta en display:none cuando el size sea menor a 450 px width-->
         <div class="index__line large"></div>
     </div>
+    <div id="tecnologias"></div>
     <div class="index">
         <div class="index__title">
             <p>TECNOLOGÍAS Y LENGUAJES</p>
         </div>
-        <!--
-        <div class="table">
-            <table>
-                <tr>
-                    <th>LENGUAJE O TECNOLOGÍA</th>
-                    <th>EXPERIENCIA</th>
-                </tr>
-                <tr>
-                    <td>PHP (LARAVEL)</td>
-                    <td>6 Meses</td>
-                </tr>
-                <tr>
-                    <td>Python (Django)</td>
-                    <td>3 Meses</td>
-                </tr>
-                <tr>
-                    <td>Java</td>
-                    <td>5 Meses</td>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                    <td>1 Año</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>1 Año</td>
-                </tr>
-                <tr>
-                    <td>GIT</td>
-                    <td>6 Meses</td>
-                </tr>
-                <tr>
-                    <td>Mysql</td>
-                    <td>3 Meses</td>
-                </tr>
-                <tr>
-                    <td>SQL</td>
-                    <td>3 Meses</td>
-                </tr>
-            </table>
-        </div>
-        -->
         <div class="tecnologias">
             <div class="icon__container">
                 <span class="icon php"></span>
@@ -198,6 +159,19 @@
                 <p>Intercambio
                     Centria University of Applied Sciences, Kokkola, Finlandia
                     2021 (Enero-Junio).</p>
+            </div>
+        </div>
+        <div id="contacto"></div>
+        <div class="index__line large"></div>
+        <div class="container contacto">
+            <div class="index__title">
+                <p>CONTACTO</p>
+            </div>
+            <div class="redes__sociales">
+                <i class="fab fa-facebook-square" onclick="window.location='https://www.facebook.com/yeissonOMG/'"></i>
+                <i class="fab fa-instagram-square" onclick="window.location='https://www.instagram.com/yeisson_pinilla/'"></i>
+                <i class="fab fa-github-square" onclick="window.location='https://github.com/yeissonpigo'"></i>
+                <i class="fab fa-linkedin" onclick="window.location='https://www.linkedin.com/in/yeissonpinillagonzalez/'"></i>
             </div>
         </div>
     </div>
