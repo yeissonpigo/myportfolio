@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bace6cc7e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Wallet</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>WALLET</h1>
+    </div>
+    <div class="main__container">
+        <div class="inputs">
+            <div class="type">
+                <span id="movementType" class="green">Income</span>
+            </div>
+            <div class="changeType">
+                <label class="switch">
+                    <input id="checkbox" type="checkbox" checked="checked" onclick="updateMovementType(this, 'movementType')"
+                        checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <input id="name" type="text" placeholder="name">
+            <input id="amount" type="number" placeholder="amount" min="0">
+            <div class="botonera">
+                <button onclick="saveMovement()">Add</button>
+            </div>
+        </div>
+        <div class="counter">
+            <p>Money:</p>
+            <p class="counter__data" id="counter"></p>
+        </div>
+    </div>
+
+    <div id="table"></div>
+
+    <!--Modal Window to edit a movement-->
+    <div class="modal" id="modal_edit">
+        <div class="modal__content">
+            <div class="title">
+                <h1>Edit your movement</h1>
+            </div>
+            <div class="content">
+                <div class="type">
+                    <span id="movementType_edit" class="green">Income</span>
+                </div>
+                <div class="changeType">
+                    <label class="switch">
+                        <input id="checkbox_edit" type="checkbox" checked="checked"
+                            onclick="updateMovementType(this, 'movementType_edit')" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="inputs">
+                    <input id="name_edit" type="text" placeholder="name">
+                    <input id="amount_edit" type="number" placeholder="amount">
+                    <div class="botonera">
+                        <button onclick="editSave()">Save</button>
+                        <button onclick="closeModal(document.getElementById('modal_edit'))">Cancel</button>
+                    </div>
+                </div>
+                <p id="movementId_edit" style="display: none;"></p>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal window to delete a movement-->
+    <div class="modal" id="modal_delete">
+        <div class="modal__content" style="padding: 10px;">
+            <div class="title">
+                <h1>Delete your movement</h1>
+            </div>
+            <div class="content">
+                <div
+                    style="padding-top: 20px; padding-bottom: 10px; margin: auto; text-align: center; font-size: 30px;">
+                    Do you want to delete this movement?
+                </div>
+                <div class="inputs">
+                    <span id="movementType_delete" class="green"
+                        style="align-items: center; margin: auto; padding-bottom: 10px; font-size: 30px;">Income</span>
+                    <input id="name_delete" type="text" placeholder="name" disabled>
+                    <input id="amount_delete" type="number" placeholder="amount" disabled>
+                    <div class="botonera">
+                        <button onclick="deleteSave()">Yes</button>
+                        <button onclick="closeModal(document.getElementById('modal_delete'))">No</button>
+                    </div>
+                </div>
+                <p id="movementId_delete" style="display: none;"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
