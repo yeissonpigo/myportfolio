@@ -323,6 +323,10 @@ img {
   transition: opacity 0.5s ease;
 }
 
+a {
+  color: #fcfce6;
+}
+
 .open {
   font-family: "Courier Prime", monospace;
   text-transform: uppercase;
@@ -330,11 +334,17 @@ img {
   width: 100%;
   text-align: center;
   cursor: pointer;
+  color: #110f12;
+  text-decoration: none;
 }
 
 .middle:hover {
   color: #fcfce6;
   background-color: #110f12;
+}
+
+.middle:hover a {
+  color: #fcfce6;
 }
 
 .leermas {
