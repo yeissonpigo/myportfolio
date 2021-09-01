@@ -97,8 +97,19 @@
                 <p>Blog personal, enfocado al desarrollo web mediante el uso de Laravel, además...</p>
             </div>
             <div class="leermas">
-                <a href="#">Leer más</a>
+                <a onclick="actModal('laradaily', 0)">Leer más</a>
             </div>
+            <!--Modal Window to Leer Más-->
+            <div class="modal" id="laradaily">
+                <p onclick="actModal('laradaily', 1)">X</p>
+                <div class="modal__title">
+                    <h1>&lt;/LARADAILY&gt;</h1>
+                </div>
+                <div class="modal__text">
+                    <p>Laradaily es un blog personal, enfocado al desarrollo web mediante el uso de Laravel, además de temas de vida personal. El objetivo es crear una comunidad pequeña pero estable, mediante la cual se compartirá conocimiento, y también permitirá compartir temas personales, hobbies, etc. Pues el mundo del desarrollo no se enfoca en las habilidades técnicas, sino en las habilidades blandas, y el desarrollo personal.</p>
+                </div>
+            </div>
+
             <!--No olvidar poner esta en display:none cuando el size sea mayor a 450 px width-->
             <div class="index__line dark"></div>
         </div>
@@ -117,7 +128,17 @@
                 <p>Gestor de dinero “wallet”, es una herramienta que te permitirá hacer...</p>
             </div>
             <div class="leermas">
-                <a href="#">Leer más</a>
+                <a onclick="actModal('wallet',0)">Leer más</a>
+            </div>
+            <!--Modal Window to Leer Más-->
+            <div class="modal" id="wallet">
+                <p onclick="actModal('wallet', 1)">X</p>
+                <div class="modal__title">
+                    <h1>&lt;/WALLET&gt;</h1>
+                </div>
+                <div class="modal__text">
+                    <p>Wallet es una aplicación sencilla, con una interfaz gráfica simple, diseñada para llevar registro de los gastos personales de la forma más fácil: registrar egresos e ingresos. De esta forma, permite conocer el dinero que el usuario tiene disponible, o que debe, además de tener la oportunidad de modificar, y eliminar los registros.</p>
+                </div>
             </div>
         </div>
         <div class="project__three">
@@ -135,7 +156,17 @@
                 <p>Sistema para ordenar conjuntos de datos numéricos, además permite visualizar la forma...</p>
             </div>
             <div class="leermas">
-                <a href="#">Leer más</a>
+                <a onclick="actModal('sortingAlg', 0)">Leer más</a>
+            </div>
+            <!--Modal Window to Leer Más-->
+            <div class="modal" id="sortingAlg">
+                <p onclick="actModal('sortingAlg', 1)">X</p>
+                <div class="modal__title">
+                    <h1 style="font-size: 1.6rem;">&lt;/SORTING_ALGORITHM&gt;</h1>
+                </div>
+                <div class="modal__text">
+                    <p>Sorting Algorithm es una aplicación que organiza cualquier conjunto de datos numéricos, que tengan el formato 1, 2, 3, 4. Por supuesto, el conjunto puede estar en desorden, lo importante es la separación mediante comas ",". La aplicación incluye 3 conjunto de datos de ejemplo, y un input donde se puede ingresar cualquier otro conjunto de datos. Además, se puede observar cómo el algoritmo va organizando los datos.</p>
+                </div>
             </div>
         </div>
         <!--No olvidar poner esta en display:none cuando el size sea menor a 450 px width-->

@@ -7,7 +7,7 @@ function updateMovementType(checkbox, spanId) {
     spanText.innerHTML = "Income";
     spanText.classList.remove("red");
     spanText.classList.toggle("green");
-  } else {
+  } else { 
     spanText.innerHTML = "Outcome";
     spanText.classList.remove("green");
     spanText.classList.toggle("red");

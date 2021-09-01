@@ -43,4 +43,14 @@ function navSlide() {
   });
 }
 
+function actModal(modalId, act) {
+  modal = document.getElementById(modalId);
+  if (act == 0) {
+    modal.style.display = "block";
+  }
+  else {
+    modal.style.display = "none";
+  }
+}
+
 navSlide();
