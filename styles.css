@@ -545,10 +545,12 @@ a {
 }
 
 .modal > p{
+  margin: auto;
   margin-top: 60px;
   font-size: 1.8rem;
   text-align: right;
   padding-right: 20px;
+  cursor: pointer;
 }
 
 .modal__title{
@@ -564,4 +566,10 @@ a {
   padding: 20px;
   text-align: justify;
   font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 500px){
+  .modal p, .modal__title, .modal__text{
+    width: 500px;
+  }
 }
