@@ -249,11 +249,11 @@ img {
 }
 
 .index__line {
-  background-color: #fcfce679;
+  background-color: #fcfce6;
   opacity: 0.5;
   width: 80%;
   max-width: 320px;
-  height: 1.4px;
+  height: 1.4px;  
   margin: auto;
   border-radius: 8px;
   box-shadow: 0;
@@ -483,8 +483,12 @@ a {
 
 @media only screen and (min-width: 679px) {
   .introduction .index__line,
-  .project__one .index__line {
+  .responsive .index__line {
     display: none;
+  }
+
+  .index__line .large {
+    background-color:black ;
   }
 
   .vertical {
@@ -492,6 +496,10 @@ a {
     width: 1.4px;
     height: 500px;
     z-index: 0;
+  }
+
+  .container .effect .show .index__line{
+    display: block;
   }
 }
 
